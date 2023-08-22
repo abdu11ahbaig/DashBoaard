@@ -1,8 +1,26 @@
-import React from 'react';
-import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, LineSeries, DateTime, Legend, Tooltip } from '@syncfusion/ej2-react-charts';
+// eslint-disable-next-line
+import React from "react";
+import {
+  ChartComponent,
+  SeriesCollectionDirective,
+  SeriesDirective,
+  Inject,
+  LineSeries,
+  DateTime,
+  Legend,
+  Tooltip,
+  // eslint-disable-next-line
+} from "@syncfusion/ej2-react-charts";
+// eslint-disable-next-line
 
-import { lineCustomSeries, LinePrimaryXAxis, LinePrimaryYAxis } from '../../data/dummy';
-import { useStateContext } from '../../contexts/ContextProvider';
+import {
+  lineCustomSeries,
+  LinePrimaryXAxis,
+  LinePrimaryYAxis,
+  // eslint-disable-next-line
+} from "../../data/dummy";
+// eslint-disable-next-line
+import { useStateContext } from "../../contexts/ContextProvider";
 
 const LineChart = () => {
   const { currentMode } = useStateContext();
@@ -15,13 +33,20 @@ const LineChart = () => {
       primaryYAxis={LinePrimaryYAxis}
       chartArea={{ border: { width: 0 } }}
       tooltip={{ enable: true }}
-      background={currentMode === 'Dark' ? '#33373E' : '#fff'}
-      legendSettings={{ background: 'white' }}
+      // eslint-disable-next-line
+      background={
+        // eslint-disable-next-line
+        currentMode === "Dark" ? "#33373E" : "#fff"
+      }
+      // eslint-disable-next-line
+      legendSettings={{ background: "white" }}
     >
       <Inject services={[LineSeries, DateTime, Legend, Tooltip]} />
       <SeriesCollectionDirective>
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-        {lineCustomSeries.map((item, index) => <SeriesDirective key={index} {...item} />)}
+        {lineCustomSeries.map((item, index) => (
+          // eslint-disable-next-line
+          <SeriesDirective key={index} {...item} />
+        ))}
       </SeriesCollectionDirective>
     </ChartComponent>
   );
