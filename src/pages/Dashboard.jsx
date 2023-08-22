@@ -1,15 +1,24 @@
+// eslint-disable-next-line
 import React from "react";
+// eslint-disable-next-line
 import { DropDownListComponent } from "@syncfusion/ej2-react-dropdowns";
-
+// eslint-disable-next-line
 import { Stacked, LineChart } from "../components";
+// eslint-disable-next-line
 import { earningData, dropdownData } from "../data/dummy";
+// eslint-disable-next-line
 import { useStateContext } from "../contexts/ContextProvider";
+// eslint-disable-next-line
 const DropDown = ({ currentMode }) => (
+  // eslint-disable-next-line
   <div className="w-28 border-1 border-color px-2 py-1 rounded-md">
     <DropDownListComponent
       id="time"
+      // eslint-disable-next-line
       fields={{ text: "Time", value: "Id" }}
+      // eslint-disable-next-line
       style={{ border: "none", color: currentMode === "Dark" && "white" }}
+      // eslint-disable-next-line
       value="1"
       dataSource={dropdownData}
       popupHeight="220px"
@@ -20,12 +29,13 @@ const DropDown = ({ currentMode }) => (
 
 const Dashboard = () => {
   const { currentMode } = useStateContext();
-
+  // eslint-disable-next-line
   return (
     <div className="mt-24">
       <div
         className="flex flex-wrap lg:flex-nowrap justify-center  "
         style={{
+          // eslint-disable-next-line
           borderRadius: `16px`,
         }}
       >
@@ -72,8 +82,13 @@ const Dashboard = () => {
       <div className="flex gap-10 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
           <div className="flex justify-between">
+            {/* // eslint-disable-next-line */}
             <p className="font-semibold text-xl">Top Products</p>
-            <div className="flex items-center gap-4"></div>
+            {/* // eslint-disable-next-line */}
+            <div className="flex items-center gap-4">
+              {/* // eslint-disable-next-line */}
+            </div>
+            {/* // eslint-disable-next-line */}
           </div>
           <div className="mt-10 flex gap-10 flex-wrap justify-center">
             <div>
