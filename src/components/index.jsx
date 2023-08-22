@@ -12,8 +12,7 @@ export { default as Footer } from "./Footer";
 export { default as Notification } from "./Notification";
 // eslint-disable-next-line
 export { default as UserProfile } from "./UserProfile";
-// eslint-disable-next-line
-export { default as SparkLine } from "./Charts/SparkLine";
+
 // eslint-disable-next-line
 export { default as LineChart } from "./Charts/LineChart";
 // eslint-disable-next-line
