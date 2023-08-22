@@ -17,6 +17,7 @@ module.exports = {
   plugins: [
     'react',
   ],
+  // eslint-disable-next-line
   rules: {
     'react/function-component-definition': 0,
     'import/extensions': 0,

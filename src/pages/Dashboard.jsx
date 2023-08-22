@@ -18,7 +18,6 @@ const DropDown = ({ currentMode }) => (
       fields={{ text: "Time", value: "Id" }}
       // eslint-disable-next-line
       style={{ border: "none", color: currentMode === "Dark" && "white" }}
-      // eslint-disable-next-line
       value="1"
       dataSource={dropdownData}
       popupHeight="220px"
